@@ -65,7 +65,7 @@ public struct EasyRequest<Model: Codable> {
                     let data = data,
                     let response = response as? HTTPURLResponse,
                     response.statusCode == 200 {
-                    guard let model = self.parsedModel(with: data, at: path) else {
+                    guard let model = self.parsedModel(with: data) else {
                         delegate?.onError()
                         return
                     }
@@ -76,33 +76,14 @@ public struct EasyRequest<Model: Codable> {
 
     }
 
-    static func parsedModel(with data: Data, at path: String?) -> Model? {
-        do {
-            let json = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary
-            if let path = path, let dictAtPath = json?.value(forKeyPath: path) as? NSDictionary {
-                return try parseModelFromJson(dictAtPath)
-            } else if let json = json {
-                return try parseModelFromJson(json)
-            } else {
-                return nil
-            }
-        } catch {
-            print(error)
-            return nil
-        }
-    }
-
-    fileprivate static func parseModelFromJson(_ json: NSDictionary) throws -> Model? {
-        let jsonData = try JSONSerialization.data(withJSONObject: json,
-                                                  options: .prettyPrinted)
+    static func parsedModel(with data: Data) -> Model? {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         do {
-            let model =  try decoder.decode(Model.self, from: jsonData)
+            let model =  try decoder.decode(Model.self, from: data)
             return model
         } catch {
             print(error)
-            print("failed to decode json: \(json) into \(Model.self)")
             return nil
         }
     }

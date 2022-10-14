@@ -6,8 +6,10 @@
 //
 
 struct Game: Codable {
-    let orderNo: Int
-    let dataType: String
-    let title: String
+    let id: Int?
+    let category: Int?
+    let created_at: Int?
+    let external_games: [Int]?
+    let first_release_date: Int?
 }
 
