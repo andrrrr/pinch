@@ -8,6 +8,7 @@
 protocol GamesViewModelType {
     var coordinatorDelegate: GamesViewModelCoordinatorDelegate? { get set }
     var viewDelegate: GamesViewDelegate? { get set }
+    var rows: [RowViewModel] { get set }
     var games: [Game]? { get set }
 
     func getGames()
