@@ -39,7 +39,7 @@ public struct EasyRequest<Model: Codable> {
         }
 
         var request = URLRequest(url: usableUrl)
-        request.httpMethod = httpFields?.httpMethod?.rawValue
+        request.httpMethod = httpFields?.httpMethod?.rawValue ?? "GET"
         if let httpBody = httpFields?.httpBody?.data(using: .utf8) {
             request.httpBody = httpBody
         }

@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  GamesViewModel.swift
 //  pinch
 //
 //  Created by Andrei on 14/10/2022.
 //
 
-import UIKit
-
-class ViewController: UIViewController {
+class GamesViewModel: GamesViewModelType {
+    weak var coordinatorDelegate: GamesViewModelCoordinatorDelegate?
+    weak var viewDelegate: GamesViewDelegate?
 
     var endPointService: EndPointServiceType?
+    var games: [Game]?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    func getGames() {
         let resolver = DependencyResolver.shared
         endPointService = try? resolver.resolve(EndPointServiceType.self)
         endPointService?.getGames(body: "fields: *;",
@@ -24,9 +23,8 @@ class ViewController: UIViewController {
     }
 }
 
-
-extension ViewController: EasyRequestDelegate {
+extension GamesViewModel: EasyRequestDelegate {
     func onError() {
-        print("oops")
+        coordinatorDelegate?.showErrorPopup()
     }
 }
