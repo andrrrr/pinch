@@ -15,8 +15,9 @@ public struct EasyRequest<Model: Codable> {
 
     public typealias SuccessCompletionHandler = (_ response: Model) -> Void
 
-    static func get(_ delegate: EasyRequestDelegate?,
-                    path: String, url: String,
+    static func get(delegate: EasyRequestDelegate?,
+                    path: String?,
+                    url: String,
                     success successCallback: @escaping SuccessCompletionHandler) {
 
         guard let urlComponent = URLComponents(string: url), let usableUrl = urlComponent.url else {
@@ -25,7 +26,7 @@ public struct EasyRequest<Model: Codable> {
         }
 
         var request = URLRequest(url: usableUrl)
-        request.httpMethod = "GET"
+        request.httpMethod = "POST"
 
         var dataTask: URLSessionDataTask?
         let defaultSession = URLSession(configuration: .default)
@@ -52,21 +53,33 @@ public struct EasyRequest<Model: Codable> {
 
     }
 
-    static func parsedModel(with data: Data, at path: String) -> Model? {
+    static func parsedModel(with data: Data, at path: String?) -> Model? {
         do {
             let json = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary
-
-            if let dictAtPath = json?.value(forKeyPath: path) {
-                let jsonData = try JSONSerialization.data(withJSONObject: dictAtPath,
-                                                          options: .prettyPrinted)
-                let decoder = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let model =  try decoder.decode(Model.self, from: jsonData)
-                return model
+            if let path = path, let dictAtPath = json?.value(forKeyPath: path) as? NSDictionary {
+                return try parseModelFromJson(dictAtPath)
+            } else if let json = json {
+                return try parseModelFromJson(json)
             } else {
                 return nil
             }
         } catch {
+            print(error)
+            return nil
+        }
+    }
+
+    fileprivate static func parseModelFromJson(_ json: NSDictionary) throws -> Model? {
+        let jsonData = try JSONSerialization.data(withJSONObject: json,
+                                                  options: .prettyPrinted)
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        do {
+            let model =  try decoder.decode(Model.self, from: jsonData)
+            return model
+        } catch {
+            print(error)
+            print("failed to decode json: \(json) into \(Model.self)")
             return nil
         }
     }

@@ -9,6 +9,6 @@ import Foundation
 
 class DependencyGraph {
     static func setup(for registry: DependencyRegistry) {
-        registry.register(EndPointServiceType.self, { try EndPointServiceService(with: $0)})
+        registry.register(EndPointServiceType.self, { try EndPointService(with: $0)})
     }
 }
