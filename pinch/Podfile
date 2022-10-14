@@ -1,6 +1,7 @@
+platform :ios, '16.0'
+
 target 'pinch' do
   use_frameworks!
-
-  # Pods for pinch
-
+  pod 'SwiftGen'
+  pod 'SwiftLint'
 end

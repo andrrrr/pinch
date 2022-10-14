@@ -15,9 +15,13 @@
 		754C56B628F9436700A9F956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754C56B528F9436700A9F956 /* Assets.xcassets */; };
 		754C56B928F9436700A9F956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754C56B728F9436700A9F956 /* LaunchScreen.storyboard */; };
 		754C56C128F9586400A9F956 /* EasyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56C028F9586400A9F956 /* EasyRequest.swift */; };
+		EE66ECCDAD20DD7B5DF3AD35 /* Pods_pinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697B909A76462875ACAD959A /* Pods_pinch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15570E09228FD99BA5BB8573 /* Pods-pinch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinch.debug.xcconfig"; path = "Target Support Files/Pods-pinch/Pods-pinch.debug.xcconfig"; sourceTree = "<group>"; };
+		697B909A76462875ACAD959A /* Pods_pinch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7205E68CDF292476DB1AA87E /* Pods-pinch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinch.release.xcconfig"; path = "Target Support Files/Pods-pinch/Pods-pinch.release.xcconfig"; sourceTree = "<group>"; };
 		754C56A628F9436600A9F956 /* pinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		754C56A928F9436600A9F956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		754C56AB28F9436600A9F956 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE66ECCDAD20DD7B5DF3AD35 /* Pods_pinch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				754C56A828F9436600A9F956 /* pinch */,
 				754C56A728F9436600A9F956 /* Products */,
+				7CE36013A19C1B9B9F5567FF /* Pods */,
+				B34DC5A507CE76269493E9A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,23 @@
 			path = pinch;
 			sourceTree = "<group>";
 		};
+		7CE36013A19C1B9B9F5567FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15570E09228FD99BA5BB8573 /* Pods-pinch.debug.xcconfig */,
+				7205E68CDF292476DB1AA87E /* Pods-pinch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B34DC5A507CE76269493E9A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				697B909A76462875ACAD959A /* Pods_pinch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 754C56BD28F9436700A9F956 /* Build configuration list for PBXNativeTarget "pinch" */;
 			buildPhases = (
+				427B3CF36541658CED13B80C /* [CP] Check Pods Manifest.lock */,
 				754C56A228F9436600A9F956 /* Sources */,
 				754C56A328F9436600A9F956 /* Frameworks */,
 				754C56A428F9436600A9F956 /* Resources */,
+				754C56C228F95E0E00A9F956 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -138,6 +164,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		427B3CF36541658CED13B80C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pinch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		754C56C228F95E0E00A9F956 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		754C56A228F9436600A9F956 /* Sources */ = {
@@ -290,6 +358,7 @@
 		};
 		754C56BE28F9436700A9F956 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15570E09228FD99BA5BB8573 /* Pods-pinch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +387,7 @@
 		};
 		754C56BF28F9436700A9F956 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7205E68CDF292476DB1AA87E /* Pods-pinch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
