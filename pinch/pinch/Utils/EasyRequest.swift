@@ -28,7 +28,6 @@ public struct EasyRequest<Model: Codable> {
     public typealias SuccessCompletionHandler = (_ response: Model) -> Void
 
     static func get(delegate: EasyRequestDelegate?,
-                    path: String?,
                     url: String,
                     httpFields: HttpFields? = nil,
                     success successCallback: @escaping SuccessCompletionHandler) {

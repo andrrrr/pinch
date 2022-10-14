@@ -36,7 +36,6 @@ class EndPointService: EndPointServiceType, Resolvable {
         let requestUrl = apiBasePath.baseUrl + "games"
 
         EasyRequest<[Game]?>.get(delegate: errorDelegate,
-                                 path: nil,
                                  url: requestUrl,
                                  httpFields: httpFields,
                                  success: { apiResonse in
