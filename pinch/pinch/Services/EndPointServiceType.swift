@@ -12,6 +12,7 @@ protocol EndPointServiceType {
 
     typealias GetGamesCompletionHandler = (_ response: [Game]?) -> Void
 
-    func getGames(errorDelegate: EasyRequestDelegate?,
+    func getGames(body: String,
+                  errorDelegate: EasyRequestDelegate?,
                   response responseCallback: @escaping GetGamesCompletionHandler)
 }

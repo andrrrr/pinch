@@ -9,11 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var endPointService: EndPointServiceType?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let resolver = DependencyResolver.shared
+        endPointService = try? resolver.resolve(EndPointServiceType.self)
+        endPointService?.getGames(body: "fields: *;",
+                                  errorDelegate: self,
+                                  response: { games in
+            print(games ?? "nope")
+        })
     }
-
-
 }
 
+
+extension ViewController: EasyRequestDelegate {
+    func onError() {
+        print("oops")
+    }
+}

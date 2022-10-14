@@ -21,6 +21,7 @@
 		754C56CC28F9605700A9F956 /* DependencyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56CB28F9605700A9F956 /* DependencyGraph.swift */; };
 		754C56CE28F9609700A9F956 /* EndPointServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56CD28F9609700A9F956 /* EndPointServiceType.swift */; };
 		754C56D128F96F0A00A9F956 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56D028F96F0A00A9F956 /* Game.swift */; };
+		754C56D428F97CF200A9F956 /* GetGamesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56D328F97CF200A9F956 /* GetGamesRequest.swift */; };
 		EE66ECCDAD20DD7B5DF3AD35 /* Pods_pinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697B909A76462875ACAD959A /* Pods_pinch.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		754C56CB28F9605700A9F956 /* DependencyGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyGraph.swift; sourceTree = "<group>"; };
 		754C56CD28F9609700A9F956 /* EndPointServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointServiceType.swift; sourceTree = "<group>"; };
 		754C56D028F96F0A00A9F956 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		754C56D328F97CF200A9F956 /* GetGamesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGamesRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				754C56D028F96F0A00A9F956 /* Game.swift */,
+				754C56D328F97CF200A9F956 /* GetGamesRequest.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				754C56C828F9601B00A9F956 /* ServiceWrapper.swift in Sources */,
 				754C56CC28F9605700A9F956 /* DependencyGraph.swift in Sources */,
 				754C56C528F95FD000A9F956 /* EndPointService.swift in Sources */,
+				754C56D428F97CF200A9F956 /* GetGamesRequest.swift in Sources */,
 				754C56AC28F9436600A9F956 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

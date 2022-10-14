@@ -11,6 +11,18 @@ protocol EasyRequestDelegate: AnyObject {
     func onError()
 }
 
+enum HttpMethod: String {
+    case GET, POST
+}
+
+public typealias HttpHeader = (headerField: String, value: String)
+
+struct HttpFields {
+    var httpMethod: HttpMethod? = .GET
+    var httpBody: String?
+    var httpHeaders: [HttpHeader]? = []
+}
+
 public struct EasyRequest<Model: Codable> {
 
     public typealias SuccessCompletionHandler = (_ response: Model) -> Void
@@ -18,18 +30,29 @@ public struct EasyRequest<Model: Codable> {
     static func get(delegate: EasyRequestDelegate?,
                     path: String?,
                     url: String,
+                    httpFields: HttpFields? = nil,
                     success successCallback: @escaping SuccessCompletionHandler) {
 
-        guard let urlComponent = URLComponents(string: url), let usableUrl = urlComponent.url else {
+        guard let urlComponent = URLComponents(string: url),
+              let usableUrl = urlComponent.url else {
             delegate?.onError()
             return
         }
 
         var request = URLRequest(url: usableUrl)
-        request.httpMethod = "POST"
+        request.httpMethod = httpFields?.httpMethod?.rawValue
+        if let httpBody = httpFields?.httpBody?.data(using: .utf8) {
+            request.httpBody = httpBody
+        }
+
+        if let headers = httpFields?.httpHeaders {
+            for header in headers {
+                request.addValue(header.value, forHTTPHeaderField: header.headerField)
+            }
+        }
 
         var dataTask: URLSessionDataTask?
-        let defaultSession = URLSession(configuration: .default)
+        let defaultSession = URLSession(configuration: .ephemeral)
 
         dataTask =
             defaultSession.dataTask(with: request) { data, response, error in
