@@ -37,6 +37,12 @@ class GamesCoordinator: Coordinator {
 }
 
 extension GamesCoordinator: GamesViewModelCoordinatorDelegate {
+    func showGameDetails() {
+        let errorViewController = ErrorViewController.instantiate(storyboard)
+        errorViewController.viewModel = errorViewModel
+        navigationController.pushViewController(errorViewController, animated: true)
+    }
+
     func showErrorPopup() {
         let errorViewController = ErrorViewController.instantiate(storyboard)
         errorViewController.viewModel = errorViewModel

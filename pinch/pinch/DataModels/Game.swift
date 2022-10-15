@@ -1,4 +1,3 @@
-
 struct Game: Codable {
     let id: Int?
     let category: Int?
@@ -15,5 +14,5 @@ struct Game: Codable {
     let tags: [Int]?
     let updated_at: Int?
     let url: String?
-    let cover: Int?
+    let cover: Cover?
 }

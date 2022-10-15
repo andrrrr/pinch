@@ -41,7 +41,7 @@
         <!--Error View Controller-->
         <scene sceneID="kcG-fs-wmM">
             <objects>
-                <viewController storyboardIdentifier="ErrorViewController" id="tQf-a3-7gQ" customClass="ErrorViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ErrorViewController" id="tQf-a3-7gQ" customClass="ErrorViewController" customModule="pinch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAC-fd-lfy">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

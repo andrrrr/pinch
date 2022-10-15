@@ -16,6 +16,7 @@ protocol GamesViewModelType {
 
 protocol GamesViewModelCoordinatorDelegate: AnyObject {
     func showErrorPopup()
+    func showGameDetails()
 }
 
 protocol GamesViewDelegate: AnyObject {

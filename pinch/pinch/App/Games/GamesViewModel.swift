@@ -25,10 +25,12 @@ class GamesViewModel: GamesViewModelType {
     }
 
     func getGames() {
-        let body = "fields: *; limit \(limit); offset: \(offset);"
+        let fields = "id,cover.url,name,summary,url"
+        let body = "fields: \(fields); limit \(limit); offset: \(offset);"
         endPointService?.getGames(body: body,
                                   errorDelegate: self,
                                   response: { games in
+            print(games ?? "got nothing")
             guard let games = games else {
                 self.onError()
                 return
@@ -45,11 +47,10 @@ class GamesViewModel: GamesViewModelType {
         guard let games = games else {return []}
 
         for (idx, game) in games.enumerated() {
-            let cellModel = GameCellViewModel(title: game.name,
-                                              text: game.summary,
-                                              description: game.summary,
-                                              imageUrl: game.url,
-                                              cellPressed: {})
+            let cellModel = GameCellViewModel(game: game,
+                                              cellPressed: { [weak self]  in
+                self?.coordinatorDelegate?.showGameDetails()
+            })
 
             rows.append(.gameCell(cellModel))
         }

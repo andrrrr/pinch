@@ -8,25 +8,22 @@
 class GameCellViewModel: Equatable, ViewModelPressible {
 
     var title: String?
-    var text: String?
     var description: String?
     var imageUrl: String?
+
+    var game: Game
     var cellPressed: (() -> Void)?
 
-    init(title: String?,
-         text: String?,
-         description: String?,
-         imageUrl: String?,
+    init(game: Game,
          cellPressed: (() -> Void)?) {
-
-        self.title = title
-        self.text = text
-        self.description = description
-        self.imageUrl = imageUrl
+        self.game = game
+        self.title = game.name
+        self.description = game.summary
+        self.imageUrl = game.cover?.url
         self.cellPressed = cellPressed
     }
 
     static func == (lhs: GameCellViewModel, rhs: GameCellViewModel) -> Bool {
-        return lhs.title == rhs.title && lhs.text == rhs.text && lhs.description == rhs.description
+        return lhs.title == rhs.title && lhs.description == rhs.description
     }
 }
