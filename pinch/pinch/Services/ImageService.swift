@@ -18,11 +18,15 @@ class ImageService: ImageServiceType, Resolvable {
         return nil
     }
 
-    func downloadImage(imageUrl: String, successClosure: (Data?) -> Void) {
-        if let url = URL(string: imageUrl),
-           let imageData = try? Data(contentsOf: url){
-            successClosure(imageData)
-            storeImageData(imageData: imageData, forKey: imageUrl)
+    func downloadImage(imageUrl: String, successClosure: @escaping (Data?) -> Void) {
+        DispatchQueue.global(qos: .background).async {
+            if let url = URL(string: imageUrl),
+               let imageData = try? Data(contentsOf: url) {
+                successClosure(imageData)
+                DispatchQueue.main.async {
+                    self.storeImageData(imageData: imageData, forKey: imageUrl)
+                }
+            }
         }
     }
 

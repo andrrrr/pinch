@@ -15,8 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let registry = DependencyResolver.shared as? DependencyRegistry {
             DependencyGraph.setup(for: registry)
         }
-        
+        updateColors()
         return true
+    }
+
+    func updateColors() {
+        UIBarButtonItem.appearance().tintColor = .black
     }
 
     // MARK: UISceneSession Lifecycle

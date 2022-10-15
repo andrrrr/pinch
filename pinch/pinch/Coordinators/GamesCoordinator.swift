@@ -24,6 +24,12 @@ class GamesCoordinator: Coordinator {
         return viewModel
     }()
 
+    lazy var detailViewModel: DetailViewModel! = {
+        let viewModel = DetailViewModel()
+        viewModel.coordinatorDelegate = self
+        return viewModel
+    }()
+
     lazy var errorViewModel: ErrorViewModel! = {
         let viewModel = ErrorViewModel()
         return viewModel
@@ -37,10 +43,11 @@ class GamesCoordinator: Coordinator {
 }
 
 extension GamesCoordinator: GamesViewModelCoordinatorDelegate {
-    func showGameDetails() {
-        let errorViewController = ErrorViewController.instantiate(storyboard)
-        errorViewController.viewModel = errorViewModel
-        navigationController.pushViewController(errorViewController, animated: true)
+    func showGameDetails(game: Game) {
+        let detailViewController = DetailViewController.instantiate(storyboard)
+        detailViewController.viewModel = detailViewModel
+        detailViewController.viewModel.game = game
+        navigationController.pushViewController(detailViewController, animated: true)
     }
 
     func showErrorPopup() {
@@ -49,3 +56,5 @@ extension GamesCoordinator: GamesViewModelCoordinatorDelegate {
         navigationController.pushViewController(errorViewController, animated: true)
     }
 }
+
+extension GamesCoordinator: DetailViewModelCoordinatorDelegate {}

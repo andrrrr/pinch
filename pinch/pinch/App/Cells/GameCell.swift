@@ -27,7 +27,10 @@ class GameCell: UITableViewCell, CellConfigurable {
     }
 
     func getImage(_ url: String?) {
-        guard let url = url?.replacingOccurrences(of: "//", with: "https://") else {return}
+        guard let url = url?.replacingOccurrences(of: "//", with: "https://") else {
+            self.iconImageView.image = UIImage(named: "Controller_icon")
+            return
+        }
         let resolver = DependencyResolver.shared
         if let imageService = try? resolver.resolve(ImageServiceType.self) {
             if let imageData = imageService.getImageData(url: url) {
@@ -43,6 +46,11 @@ class GameCell: UITableViewCell, CellConfigurable {
                 }
             })
         }
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.iconImageView.image = nil
     }
 }
 

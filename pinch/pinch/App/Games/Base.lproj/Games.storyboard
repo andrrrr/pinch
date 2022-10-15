@@ -72,8 +72,81 @@
             </objects>
             <point key="canvasLocation" x="889.23076923076917" y="-2.1327014218009479"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="RRJ-CV-IL2">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="6it-Bh-ff7" customClass="DetailViewController" customModule="pinch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oHE-7n-apD">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92A-gW-zAK">
+                                <rect key="frame" x="24" y="63" width="342" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NNB-0u-H30">
+                                <rect key="frame" x="24" y="107" width="342" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="W9b-2H-nsP"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVz-NI-QiX">
+                                <rect key="frame" x="24" y="328" width="342" height="200"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu6-rU-kMz">
+                                <rect key="frame" x="24" y="544" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vui-cG-fTu">
+                                <rect key="frame" x="324" y="544" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xCi-aa-L1v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xCi-aa-L1v" firstAttribute="trailing" secondItem="92A-gW-zAK" secondAttribute="trailing" constant="24" id="0YT-DX-5uS"/>
+                            <constraint firstItem="92A-gW-zAK" firstAttribute="top" secondItem="xCi-aa-L1v" secondAttribute="top" constant="16" id="0mU-Tr-yZS"/>
+                            <constraint firstItem="xCi-aa-L1v" firstAttribute="trailing" secondItem="Vui-cG-fTu" secondAttribute="trailing" constant="24" id="3IJ-hv-jNW"/>
+                            <constraint firstItem="xCi-aa-L1v" firstAttribute="trailing" secondItem="NVz-NI-QiX" secondAttribute="trailing" constant="24" id="7ba-FF-7PO"/>
+                            <constraint firstItem="xu6-rU-kMz" firstAttribute="top" secondItem="NVz-NI-QiX" secondAttribute="bottom" constant="16" id="DbK-id-M8Y"/>
+                            <constraint firstItem="Vui-cG-fTu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xu6-rU-kMz" secondAttribute="trailing" constant="24" id="IQ1-fo-dGB"/>
+                            <constraint firstItem="NNB-0u-H30" firstAttribute="top" secondItem="92A-gW-zAK" secondAttribute="bottom" constant="14" id="IhE-Ps-jkH"/>
+                            <constraint firstItem="NNB-0u-H30" firstAttribute="leading" secondItem="xCi-aa-L1v" secondAttribute="leading" constant="24" id="LbO-9w-EVZ"/>
+                            <constraint firstItem="NVz-NI-QiX" firstAttribute="top" secondItem="NNB-0u-H30" secondAttribute="bottom" constant="21" id="Odi-nf-y0L"/>
+                            <constraint firstItem="xCi-aa-L1v" firstAttribute="trailing" secondItem="NNB-0u-H30" secondAttribute="trailing" constant="24" id="f2G-Vi-jfn"/>
+                            <constraint firstItem="Vui-cG-fTu" firstAttribute="centerY" secondItem="xu6-rU-kMz" secondAttribute="centerY" id="rhp-Cy-432"/>
+                            <constraint firstItem="92A-gW-zAK" firstAttribute="leading" secondItem="xCi-aa-L1v" secondAttribute="leading" constant="24" id="tmj-pa-msD"/>
+                            <constraint firstItem="xu6-rU-kMz" firstAttribute="leading" secondItem="xCi-aa-L1v" secondAttribute="leading" constant="24" id="v1n-oP-DXL"/>
+                            <constraint firstItem="NVz-NI-QiX" firstAttribute="leading" secondItem="xCi-aa-L1v" secondAttribute="leading" constant="24" id="zpX-Qn-BVN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameDescription" destination="NVz-NI-QiX" id="wfx-zl-6bu"/>
+                        <outlet property="gameScreenshot" destination="NNB-0u-H30" id="Rrj-4N-X9G"/>
+                        <outlet property="gameTitle" destination="92A-gW-zAK" id="GOh-IQ-PLO"/>
+                        <outlet property="releaseYearLabel" destination="Vui-cG-fTu" id="FjH-A9-0qN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRt-a6-ku8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650.7692307692307" y="-2.1327014218009479"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

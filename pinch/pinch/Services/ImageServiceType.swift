@@ -9,5 +9,5 @@ import UIKit
 
 protocol ImageServiceType {
     func getImageData(url: String) -> Data?
-    func downloadImage(imageUrl: String, successClosure: (Data?) -> Void)
+    func downloadImage(imageUrl: String, successClosure: @escaping (Data?) -> Void)
 }
