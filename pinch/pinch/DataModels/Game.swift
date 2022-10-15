@@ -15,4 +15,15 @@ struct Game: Codable {
     let updated_at: Int?
     let url: String?
     let cover: Cover?
+    let screenshots: [Screenshot]?
+}
+
+struct Cover: Codable {
+    let id: Int?
+    let url: String?
+}
+
+struct Screenshot: Codable {
+    let id: Int?
+    let url: String?
 }

@@ -25,7 +25,7 @@ class GamesViewModel: GamesViewModelType {
     }
 
     func getGames() {
-        let fields = "id,cover.url,name,summary,url"
+        let fields = "id,cover.url,name,summary,url,first_release_date,screenshots.*"
         let body = "fields: \(fields); limit \(limit); offset: \(offset);"
         endPointService?.getGames(body: body,
                                   errorDelegate: self,
@@ -35,6 +35,7 @@ class GamesViewModel: GamesViewModelType {
                 self.onError()
                 return
             }
+            print(games)
             self.offset += self.limit
             self.games?.append(contentsOf: games)
             self.rows = self.getCells()
