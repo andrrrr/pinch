@@ -13,6 +13,10 @@ class DetailViewController: UIViewController, Storyboarded {
     @IBOutlet weak var gameDescription: UITextView!
     @IBOutlet weak var releaseYearLabel: UILabel!
 
+    @IBAction func swipedBack(_ sender: Any) {
+        viewModel.coordinatorDelegate?.goBackToList()
+    }
+
     var imageService: ImageServiceType?
 
     var viewModel: DetailViewModelType! {

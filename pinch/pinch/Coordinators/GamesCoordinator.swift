@@ -57,4 +57,8 @@ extension GamesCoordinator: GamesViewModelCoordinatorDelegate {
     }
 }
 
-extension GamesCoordinator: DetailViewModelCoordinatorDelegate {}
+extension GamesCoordinator: DetailViewModelCoordinatorDelegate {
+    func goBackToList() {
+        navigationController.popViewController(animated: true)
+    }
+}

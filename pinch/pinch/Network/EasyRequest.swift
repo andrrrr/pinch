@@ -77,7 +77,6 @@ public struct EasyRequest<Model: Codable> {
 
     static func parsedModel(with data: Data) -> Model? {
         let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
         do {
             let model =  try decoder.decode(Model.self, from: data)
             return model

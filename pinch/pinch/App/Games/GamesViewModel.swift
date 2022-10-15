@@ -25,7 +25,16 @@ class GamesViewModel: GamesViewModelType {
     }
 
     func getGames() {
-        let fields = "id,cover.url,name,summary,url,first_release_date,screenshots.*"
+        fetchGames(addOffset: true)
+    }
+
+    func reloadGames() {
+        fetchGames(addOffset: false)
+    }
+
+    func fetchGames(addOffset: Bool) {
+        let offset = addOffset ? offset : 0
+        let fields = "id,cover.url,name,summary,url,screenshots.*,first_release_date"
         let body = "fields: \(fields); limit \(limit); offset: \(offset);"
         endPointService?.getGames(body: body,
                                   errorDelegate: self,
@@ -35,9 +44,13 @@ class GamesViewModel: GamesViewModelType {
                 self.onError()
                 return
             }
-            print(games)
-            self.offset += self.limit
-            self.games?.append(contentsOf: games)
+
+            if addOffset {
+                self.offset += self.limit
+                self.games?.append(contentsOf: games)
+            } else {
+                self.games = games
+            }
             self.rows = self.getCells()
             self.viewDelegate?.refreshTable()
         })

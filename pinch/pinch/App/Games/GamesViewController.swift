@@ -17,14 +17,28 @@ class GamesViewController: UIViewController, Storyboarded {
 
     @IBOutlet weak var tableView: UITableView!
 
+    let refreshControl = UIRefreshControl()
+
+    @objc func refresh(_ sender: AnyObject) {
+        viewModel.reloadGames()
+        refreshControl.endRefreshing()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Games"
         navigationController?.navigationBar.prefersLargeTitles = true
         setupTable()
+        addPullToRefresh()
     }
 
-    func setupTable() {
+    fileprivate func addPullToRefresh() {
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+    }
+
+    fileprivate func setupTable() {
         registerCells()
         tableView.delegate = self
         tableView.dataSource = self

@@ -11,11 +11,12 @@ protocol DetailViewModelType {
 
     var game: Game? { get set }
 
-    func getReleaseYear(_ unixTimeStamp: Int?) -> String
+    func getReleaseYear(_ unixTimeStamp: Double?) -> String
 }
 
 protocol DetailViewModelCoordinatorDelegate: AnyObject {
     func showErrorPopup()
+    func goBackToList()
 }
 
 protocol DetailViewDelegate: AnyObject {

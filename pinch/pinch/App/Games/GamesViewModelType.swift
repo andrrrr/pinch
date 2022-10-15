@@ -12,6 +12,7 @@ protocol GamesViewModelType {
     var games: [Game]? { get set }
 
     func getGames()
+    func reloadGames()
 }
 
 protocol GamesViewModelCoordinatorDelegate: AnyObject {

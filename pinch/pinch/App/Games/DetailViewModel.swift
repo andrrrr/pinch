@@ -22,10 +22,10 @@ class DetailViewModel: DetailViewModelType {
 
     var game: Game?
     
-    func getReleaseYear(_ unixTimeStamp: Int?) -> String {
+    func getReleaseYear(_ unixTimeStamp: Double?) -> String {
         guard let unwrapped = unixTimeStamp else {return ""}
-        let unixTime = Double(unwrapped)
-        let date = Date(timeIntervalSince1970: unixTime)
+//        let unixTime = Double(unwrapped)
+        let date = Date(timeIntervalSince1970: unwrapped)
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
         dateFormatter.locale = NSLocale.current

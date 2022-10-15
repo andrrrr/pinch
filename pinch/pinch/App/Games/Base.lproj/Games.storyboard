@@ -114,6 +114,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xCi-aa-L1v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="xCi-aa-L1v" firstAttribute="trailing" secondItem="92A-gW-zAK" secondAttribute="trailing" constant="24" id="0YT-DX-5uS"/>
                             <constraint firstItem="92A-gW-zAK" firstAttribute="top" secondItem="xCi-aa-L1v" secondAttribute="top" constant="16" id="0mU-Tr-yZS"/>
@@ -130,6 +131,9 @@
                             <constraint firstItem="xu6-rU-kMz" firstAttribute="leading" secondItem="xCi-aa-L1v" secondAttribute="leading" constant="24" id="v1n-oP-DXL"/>
                             <constraint firstItem="NVz-NI-QiX" firstAttribute="leading" secondItem="xCi-aa-L1v" secondAttribute="leading" constant="24" id="zpX-Qn-BVN"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Toi-cO-526" appends="YES" id="7Wn-ml-maT"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="gameDescription" destination="NVz-NI-QiX" id="wfx-zl-6bu"/>
@@ -139,6 +143,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRt-a6-ku8" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Toi-cO-526">
+                    <connections>
+                        <action selector="swipedBack:" destination="6it-Bh-ff7" id="r0l-zq-y39"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1650.7692307692307" y="-2.1327014218009479"/>
         </scene>

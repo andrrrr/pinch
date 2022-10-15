@@ -3,7 +3,7 @@ struct Game: Codable {
     let category: Int?
     let created_at: Int?
     let external_games: [Int]?
-    let first_release_date: Int?
+    let first_release_date: Double?
     let genres: [Int]?
     let name: String?
     let platforms: [Int]?
