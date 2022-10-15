@@ -13,15 +13,28 @@ class GamesViewModel: GamesViewModelType {
     var endPointService: EndPointServiceType?
     var rows: [RowViewModel] = []
     var games: [Game]?
+    var offset: Int
+    let limit = 20
 
-    func getGames() {
+    required init() {
         let resolver = DependencyResolver.shared
         endPointService = try? resolver.resolve(EndPointServiceType.self)
-        endPointService?.getGames(body: "fields: *;",
+        offset = 0
+        games = [Game]()
+        getGames()
+    }
+
+    func getGames() {
+        let body = "fields: *; limit \(limit); offset: \(offset);"
+        endPointService?.getGames(body: body,
                                   errorDelegate: self,
                                   response: { games in
-            print(games ?? "nope")
-            self.games = games
+            guard let games = games else {
+                self.onError()
+                return
+            }
+            self.offset += self.limit
+            self.games?.append(contentsOf: games)
             self.rows = self.getCells()
             self.viewDelegate?.refreshTable()
         })
@@ -34,6 +47,7 @@ class GamesViewModel: GamesViewModelType {
         for (idx, game) in games.enumerated() {
             let cellModel = GameCellViewModel(title: game.name,
                                               text: game.summary,
+                                              description: game.summary,
                                               imageUrl: game.url,
                                               cellPressed: {})
 

@@ -19,9 +19,9 @@ class GamesViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.title = "Games"
+        navigationController?.navigationBar.prefersLargeTitles = true
         setupTable()
-        viewModel.getGames()
     }
 
     func setupTable() {
@@ -64,6 +64,12 @@ extension GamesViewController: UITableViewDelegate, UITableViewDataSource {
         switch viewModel {
         case .gameCell:
             return GameCell.identifier.rawValue
+        }
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row + 1 == viewModel.rows.count {
+            viewModel.getGames()
         }
     }
 }

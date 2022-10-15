@@ -1,9 +1,3 @@
-//
-//  Game.swift
-//  pinch
-//
-//  Created by Andrei on 14/10/2022.
-//
 
 struct Game: Codable {
     let id: Int?
@@ -21,6 +15,5 @@ struct Game: Codable {
     let tags: [Int]?
     let updated_at: Int?
     let url: String?
-    let checksum: String?
+    let cover: Int?
 }
-

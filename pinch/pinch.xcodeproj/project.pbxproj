@@ -34,6 +34,7 @@
 		754C56EF28F9FC8F00A9F956 /* GameCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56EE28F9FC8F00A9F956 /* GameCellViewModel.swift */; };
 		754C56F128F9FDE600A9F956 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56F028F9FDE600A9F956 /* GameCell.swift */; };
 		754C56F328F9FE7800A9F956 /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754C56F228F9FE7800A9F956 /* GameCell.xib */; };
+		754C56F728FA8A0300A9F956 /* Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56F628FA8A0300A9F956 /* Cover.swift */; };
 		EE66ECCDAD20DD7B5DF3AD35 /* Pods_pinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697B909A76462875ACAD959A /* Pods_pinch.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		754C56EE28F9FC8F00A9F956 /* GameCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCellViewModel.swift; sourceTree = "<group>"; };
 		754C56F028F9FDE600A9F956 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		754C56F228F9FE7800A9F956 /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
+		754C56F628FA8A0300A9F956 /* Cover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				754C56D028F96F0A00A9F956 /* Game.swift */,
+				754C56F628FA8A0300A9F956 /* Cover.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				754C56D128F96F0A00A9F956 /* Game.swift in Sources */,
 				754C56C828F9601B00A9F956 /* ServiceWrapper.swift in Sources */,
 				754C56CC28F9605700A9F956 /* DependencyGraph.swift in Sources */,
+				754C56F728FA8A0300A9F956 /* Cover.swift in Sources */,
 				754C56C528F95FD000A9F956 /* EndPointService.swift in Sources */,
 				754C56E228F9E4F900A9F956 /* GamesCoordinator.swift in Sources */,
 				754C56DB28F9E02B00A9F956 /* GamesViewModel.swift in Sources */,

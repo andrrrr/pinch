@@ -43,10 +43,3 @@ extension GamesCoordinator: GamesViewModelCoordinatorDelegate {
         navigationController.pushViewController(errorViewController, animated: true)
     }
 }
-
-extension GamesCoordinator: EasyRequestDelegate {
-    func onError() {
-
-    }
-}
-

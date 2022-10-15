@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,32 +18,64 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LoT-jC-0lX">
                         <rect key="frame" x="14" y="14" width="70" height="70"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="6ic-XS-5YM"/>
                             <constraint firstAttribute="height" constant="70" id="Xoi-6i-1xC"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63u-Rk-U8C">
-                        <rect key="frame" x="98" y="38.666666666666664" width="278" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="98" y="14" width="278" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVf-jt-xWT">
+                        <rect key="frame" x="98" y="49" width="278" height="41"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="HId-9j-Toj"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="fVf-jt-xWT" firstAttribute="top" secondItem="63u-Rk-U8C" secondAttribute="bottom" constant="14" id="4q2-sz-GCe"/>
                     <constraint firstAttribute="bottom" secondItem="LoT-jC-0lX" secondAttribute="bottom" constant="14" id="Jxx-o4-fHZ"/>
+                    <constraint firstItem="fVf-jt-xWT" firstAttribute="leading" secondItem="LoT-jC-0lX" secondAttribute="trailing" constant="14" id="TxJ-zd-fNa"/>
+                    <constraint firstItem="63u-Rk-U8C" firstAttribute="top" secondItem="LoT-jC-0lX" secondAttribute="top" id="Wu0-0r-jeN"/>
                     <constraint firstItem="LoT-jC-0lX" firstAttribute="leading" secondItem="WBR-5K-mVG" secondAttribute="leading" constant="14" id="c19-05-lSH"/>
                     <constraint firstAttribute="trailing" secondItem="63u-Rk-U8C" secondAttribute="trailing" constant="14" id="cOu-FL-Xu6"/>
-                    <constraint firstItem="63u-Rk-U8C" firstAttribute="centerY" secondItem="LoT-jC-0lX" secondAttribute="centerY" id="ft7-cq-qlF"/>
                     <constraint firstItem="63u-Rk-U8C" firstAttribute="leading" secondItem="LoT-jC-0lX" secondAttribute="trailing" constant="14" id="gad-rT-E8M"/>
                     <constraint firstItem="LoT-jC-0lX" firstAttribute="top" secondItem="WBR-5K-mVG" secondAttribute="top" constant="14" id="nIa-km-20f"/>
+                    <constraint firstAttribute="trailing" secondItem="fVf-jt-xWT" secondAttribute="trailing" constant="14" id="ogo-gz-9dF"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="descriptionText" destination="fVf-jt-xWT" id="0pN-20-i3l"/>
                 <outlet property="gameImageView" destination="LoT-jC-0lX" id="4ge-Be-eDD"/>
                 <outlet property="titleLabel" destination="63u-Rk-U8C" id="zb5-0i-eA0"/>
             </connections>
             <point key="canvasLocation" x="-312.30769230769232" y="-183.76777251184834"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -8,11 +8,14 @@
 import Foundation
 
 protocol EndPointServiceType {
-    var apiBasePath: ApiBasePath { get set }
-
     typealias GetGamesCompletionHandler = (_ response: [Game]?) -> Void
+    typealias GetCoversCompletionHandler = (_ response: [Cover]?) -> Void
 
     func getGames(body: String,
                   errorDelegate: EasyRequestDelegate?,
                   response responseCallback: @escaping GetGamesCompletionHandler)
+
+    func getCovers(body: String,
+                   errorDelegate: EasyRequestDelegate?,
+                   response responseCallback: @escaping GetCoversCompletionHandler)
 }
