@@ -35,6 +35,8 @@
 		754C56F128F9FDE600A9F956 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56F028F9FDE600A9F956 /* GameCell.swift */; };
 		754C56F328F9FE7800A9F956 /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754C56F228F9FE7800A9F956 /* GameCell.xib */; };
 		754C56F728FA8A0300A9F956 /* Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56F628FA8A0300A9F956 /* Cover.swift */; };
+		754C56F928FAB20F00A9F956 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56F828FAB20F00A9F956 /* ImageService.swift */; };
+		754C56FB28FAB21A00A9F956 /* ImageServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56FA28FAB21A00A9F956 /* ImageServiceType.swift */; };
 		EE66ECCDAD20DD7B5DF3AD35 /* Pods_pinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697B909A76462875ACAD959A /* Pods_pinch.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		754C56F028F9FDE600A9F956 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		754C56F228F9FE7800A9F956 /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
 		754C56F628FA8A0300A9F956 /* Cover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cover.swift; sourceTree = "<group>"; };
+		754C56F828FAB20F00A9F956 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		754C56FA28FAB21A00A9F956 /* ImageServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 			children = (
 				754C56C428F95FD000A9F956 /* EndPointService.swift */,
 				754C56CD28F9609700A9F956 /* EndPointServiceType.swift */,
+				754C56F828FAB20F00A9F956 /* ImageService.swift */,
+				754C56FA28FAB21A00A9F956 /* ImageServiceType.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 				754C56DE28F9E43300A9F956 /* Coordinator.swift in Sources */,
 				754C56EA28F9E9EE00A9F956 /* ErrorViewModelType.swift in Sources */,
 				754C56AA28F9436600A9F956 /* AppDelegate.swift in Sources */,
+				754C56FB28FAB21A00A9F956 /* ImageServiceType.swift in Sources */,
 				754C56C128F9586400A9F956 /* EasyRequest.swift in Sources */,
 				754C56CE28F9609700A9F956 /* EndPointServiceType.swift in Sources */,
 				754C56E828F9E9E300A9F956 /* ErrorViewModel.swift in Sources */,
@@ -369,6 +376,7 @@
 				754C56F128F9FDE600A9F956 /* GameCell.swift in Sources */,
 				754C56D728F9DF4A00A9F956 /* Storyboarded.swift in Sources */,
 				754C56EF28F9FC8F00A9F956 /* GameCellViewModel.swift in Sources */,
+				754C56F928FAB20F00A9F956 /* ImageService.swift in Sources */,
 				754C56E028F9E45D00A9F956 /* MainCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

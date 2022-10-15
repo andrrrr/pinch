@@ -30,11 +30,12 @@ class GamesViewModel: GamesViewModelType {
         endPointService?.getGames(body: body,
                                   errorDelegate: self,
                                   response: { games in
-            print(games ?? "got nothing")
+
             guard let games = games else {
                 self.onError()
                 return
             }
+            for game in games { print(game.cover?.url ?? "no cover") }
             self.offset += self.limit
             self.games?.append(contentsOf: games)
             self.rows = self.getCells()

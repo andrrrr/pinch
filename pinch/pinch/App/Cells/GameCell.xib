@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="390" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LoT-jC-0lX">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Controller_icon" translatesAutoresizingMaskIntoConstraints="NO" id="LoT-jC-0lX">
                         <rect key="frame" x="14" y="14" width="70" height="70"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
@@ -62,12 +62,14 @@
             <connections>
                 <outlet property="descriptionText" destination="fVf-jt-xWT" id="0pN-20-i3l"/>
                 <outlet property="gameImageView" destination="LoT-jC-0lX" id="4ge-Be-eDD"/>
+                <outlet property="iconImageView" destination="LoT-jC-0lX" id="5gV-Ia-ngn"/>
                 <outlet property="titleLabel" destination="63u-Rk-U8C" id="zb5-0i-eA0"/>
             </connections>
             <point key="canvasLocation" x="-312.30769230769232" y="-183.76777251184834"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Controller_icon" width="616.33331298828125" height="403"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
