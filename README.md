@@ -11,7 +11,7 @@ Main pattern used is MVVM + Coordinator. Each view element has view, view model,
 Protocol "Storyboarded" is used for simplified view initialization from storyboard. Each view controller inside storyboard has to have same ID as class name for that ViewController.swift.
 Main storyboard is "Games", but if the project grows further there would be more different storyboards - each per scene, hence the enum for storyboard names (with one element). Scenes inside storyboard do not have connections/segues, because coordinator is in control of the flow.
 
-**Coordinators: **
+**Coordinators:**
 Coordinator is used for navigation flow. This way your views/viewModels do not have to have knowledge about neighboring views once transition is needed. 
 Also this removes configuration logic from view models. 
 Main coordinator is used for starting of the app and initializing children coordinators. Main coordinator has reference to it's children and can be used to do full dismiss-to-route.
@@ -28,7 +28,7 @@ Is used for mocking of the objects. In test target scripts there's a script for 
 **Quick:**
 Is a testing framework for short and self-explanatory test notations.
 
-**Nimble: **
+**Nimble:**
 Is a framework allowing screenshot testing. It's a tool for verification of the views whenever any changes are made (combined with mock-data). Initially 
 screenshots are made of the views that are needed to be tested. These reference images are to be found in ReferenceImages inside test folder (it's not not visible from xcode, but it is in the git repo and part of the project). When UI test is run on simulator on remote build machine - it compares newly taken screenshots with reference images - and if difference is detected (up to 1px) - test will fail.
 Important: iPhone 14 Max Pro with iOS16 simulator should be used for screenshots verification. This can be configured on build pipeline.
