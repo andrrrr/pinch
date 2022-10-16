@@ -33,6 +33,7 @@ class EndPointService: EndPointServiceType, Resolvable {
 
     func getGames(body: String,
                   errorDelegate: EasyRequestDelegate?,
+                  onNoConnection: (() -> Data?)?,
                   response responseCallback: @escaping GetGamesCompletionHandler) {
 
         let httpFields = getHttpFields(body)
@@ -41,6 +42,7 @@ class EndPointService: EndPointServiceType, Resolvable {
         EasyRequest<[Game]?>.get(delegate: errorDelegate,
                                  url: requestUrl,
                                  httpFields: httpFields,
+                                 onNoConnection: onNoConnection,
                                  success: { apiResonse in
             responseCallback(apiResonse)
         })
@@ -56,6 +58,7 @@ class EndPointService: EndPointServiceType, Resolvable {
         EasyRequest<[Cover]?>.get(delegate: errorDelegate,
                                   url: requestUrl,
                                   httpFields: httpFields,
+                                  onNoConnection: nil,
                                   success: { apiResonse in
             responseCallback(apiResonse)
         })

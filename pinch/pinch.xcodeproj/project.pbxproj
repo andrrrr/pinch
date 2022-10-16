@@ -11,7 +11,6 @@
 		754C56AC28F9436600A9F956 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56AB28F9436600A9F956 /* SceneDelegate.swift */; };
 		754C56AE28F9436600A9F956 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56AD28F9436600A9F956 /* GamesViewController.swift */; };
 		754C56B128F9436600A9F956 /* Games.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754C56AF28F9436600A9F956 /* Games.storyboard */; };
-		754C56B428F9436600A9F956 /* pinch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 754C56B228F9436600A9F956 /* pinch.xcdatamodeld */; };
 		754C56B628F9436700A9F956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754C56B528F9436700A9F956 /* Assets.xcassets */; };
 		754C56B928F9436700A9F956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754C56B728F9436700A9F956 /* LaunchScreen.storyboard */; };
 		754C56C128F9586400A9F956 /* EasyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56C028F9586400A9F956 /* EasyRequest.swift */; };
@@ -40,6 +39,8 @@
 		754C56FD28FAC9C800A9F956 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56FC28FAC9C800A9F956 /* DetailViewController.swift */; };
 		754C56FF28FAC9D400A9F956 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56FE28FAC9D400A9F956 /* DetailViewModel.swift */; };
 		754C570128FAC9E200A9F956 /* DetailViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C570028FAC9E200A9F956 /* DetailViewModelType.swift */; };
+		754C570328FB1CB400A9F956 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C570228FB1CB400A9F956 /* FileService.swift */; };
+		754C570528FB1CC000A9F956 /* FileServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C570428FB1CC000A9F956 /* FileServiceType.swift */; };
 		EE66ECCDAD20DD7B5DF3AD35 /* Pods_pinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697B909A76462875ACAD959A /* Pods_pinch.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +53,6 @@
 		754C56AB28F9436600A9F956 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		754C56AD28F9436600A9F956 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		754C56B028F9436600A9F956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Games.storyboard; sourceTree = "<group>"; };
-		754C56B328F9436600A9F956 /* pinch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pinch.xcdatamodel; sourceTree = "<group>"; };
 		754C56B528F9436700A9F956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		754C56B828F9436700A9F956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		754C56BA28F9436700A9F956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +82,8 @@
 		754C56FC28FAC9C800A9F956 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		754C56FE28FAC9D400A9F956 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		754C570028FAC9E200A9F956 /* DetailViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelType.swift; sourceTree = "<group>"; };
+		754C570228FB1CB400A9F956 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		754C570428FB1CC000A9F956 /* FileServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +130,6 @@
 				754C56B528F9436700A9F956 /* Assets.xcassets */,
 				754C56B728F9436700A9F956 /* LaunchScreen.storyboard */,
 				754C56BA28F9436700A9F956 /* Info.plist */,
-				754C56B228F9436600A9F956 /* pinch.xcdatamodeld */,
 			);
 			path = pinch;
 			sourceTree = "<group>";
@@ -140,6 +141,8 @@
 				754C56CD28F9609700A9F956 /* EndPointServiceType.swift */,
 				754C56F828FAB20F00A9F956 /* ImageService.swift */,
 				754C56FA28FAB21A00A9F956 /* ImageServiceType.swift */,
+				754C570228FB1CB400A9F956 /* FileService.swift */,
+				754C570428FB1CC000A9F956 /* FileServiceType.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -361,10 +364,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754C56B428F9436600A9F956 /* pinch.xcdatamodeld in Sources */,
 				754C56AE28F9436600A9F956 /* GamesViewController.swift in Sources */,
 				754C56DE28F9E43300A9F956 /* Coordinator.swift in Sources */,
 				754C56EA28F9E9EE00A9F956 /* ErrorViewModelType.swift in Sources */,
+				754C570328FB1CB400A9F956 /* FileService.swift in Sources */,
 				754C56AA28F9436600A9F956 /* AppDelegate.swift in Sources */,
 				754C56FB28FAB21A00A9F956 /* ImageServiceType.swift in Sources */,
 				754C56C128F9586400A9F956 /* EasyRequest.swift in Sources */,
@@ -385,6 +388,7 @@
 				754C56AC28F9436600A9F956 /* SceneDelegate.swift in Sources */,
 				754C56D928F9E02200A9F956 /* GamesViewModelType.swift in Sources */,
 				754C56F128F9FDE600A9F956 /* GameCell.swift in Sources */,
+				754C570528FB1CC000A9F956 /* FileServiceType.swift in Sources */,
 				754C56FF28FAC9D400A9F956 /* DetailViewModel.swift in Sources */,
 				754C56D728F9DF4A00A9F956 /* Storyboarded.swift in Sources */,
 				754C56EF28F9FC8F00A9F956 /* GameCellViewModel.swift in Sources */,
@@ -535,9 +539,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MVMQPVN965;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KH86VSZFQZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = pinch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -550,8 +556,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.pinch.assgnmnt;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.ockto.ocktoapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Provisioning Development";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -564,9 +572,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MVMQPVN965;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KH86VSZFQZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = pinch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -579,8 +589,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.pinch.assgnmnt;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.ockto.ocktoapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Provisioning Development";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -609,19 +621,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		754C56B228F9436600A9F956 /* pinch.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				754C56B328F9436600A9F956 /* pinch.xcdatamodel */,
-			);
-			currentVersion = 754C56B328F9436600A9F956 /* pinch.xcdatamodel */;
-			path = pinch.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 754C569E28F9436600A9F956 /* Project object */;
 }

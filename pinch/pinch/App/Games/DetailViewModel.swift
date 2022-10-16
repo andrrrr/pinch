@@ -24,7 +24,6 @@ class DetailViewModel: DetailViewModelType {
     
     func getReleaseYear(_ unixTimeStamp: Double?) -> String {
         guard let unwrapped = unixTimeStamp else {return ""}
-//        let unixTime = Double(unwrapped)
         let date = Date(timeIntervalSince1970: unwrapped)
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone(abbreviation: "GMT")

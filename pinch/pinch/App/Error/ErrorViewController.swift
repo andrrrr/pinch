@@ -9,5 +9,9 @@ import UIKit
 
 class ErrorViewController: UIViewController, Storyboarded {
 
+    @IBAction func okTapped(_ sender: Any) {
+        viewModel.coordinatorDelegate?.goBackToList()
+    }
+    
     var viewModel: ErrorViewModelType!
 }

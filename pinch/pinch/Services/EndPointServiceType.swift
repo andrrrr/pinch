@@ -13,6 +13,7 @@ protocol EndPointServiceType {
 
     func getGames(body: String,
                   errorDelegate: EasyRequestDelegate?,
+                  onNoConnection: (() -> Data?)?,
                   response responseCallback: @escaping GetGamesCompletionHandler)
 
     func getCovers(body: String,
