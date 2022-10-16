@@ -35,12 +35,12 @@ Important: iPhone 14 Max Pro with iOS16 simulator should be used for screenshots
 Disclaimer: I found that verifying screenshots doesn't work on different Mac chips. Although same simulator+iOS is selected, different chip/MacOS can cause slight difference in appearance (rounded corners with different radius) - that will fail the test. Easy to workaround - in NimbleSnapshotHelper - set 
 let snapshotAction = .recordSnapshot, run test target once (it will fail, but record new snapshots) - after that change back to .verifySnapshots - it will work after that. 
 
-# Git LFS (large file system) for screenshots:
-Should be used for ReferenceImages folder because over time this folder becomes a few GB, and checking out the repo by new developer could take ages. 
+# Git LFS for screenshots:
+Large file system should be used for ReferenceImages folder because over time this folder becomes a few GB, and checking out the repo by new developer could take ages. 
 
 # What could be improved:
 I did not use CoreData as it appears a bit of a learning curve to marry Codable with NSManagedObject (especially with nested objects: Game > Cover, Game > Screenshots) and I only had 2 days on the weekend. I did however implement offline state persistence workaround by using FileManager. This is only for quick workaround purpose and I would not use this in actual project: read/write can be slow, and there can be issues with absolute url path creation. 
-Using CoreData is best way to achive cache layer. There was a way to write a full jsonString inside CoreData and then use that to costruct back the objects array, but there is advice against doing that. 
+Using CoreData is best way to achive cache layer. 
 
 I coulnd't dedicate much time to make the detail view properly. Ideally it should also be a scrollable table view with cells being dynamically added if there is content for them (some are missing image, some fields are missing etc.).
 
