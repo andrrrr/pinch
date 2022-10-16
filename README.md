@@ -40,7 +40,7 @@ Large file system should be used for ReferenceImages folder because over time th
 
 # What could be improved:
 I did not use CoreData as it appears a bit of a learning curve to marry Codable with NSManagedObject (especially with nested objects: Game > Cover, Game > Screenshots) and I only had 2 days on the weekend. I did however implement offline state persistence workaround by using FileManager. This is only for quick workaround purpose and I would not use this in actual project: read/write can be slow, and there can be issues with absolute url path creation. 
-Using CoreData is best way to achive cache layer. 
+Using CoreData is best way to achieve cache layer. 
 
 I coulnd't dedicate much time to make the detail view properly. Ideally it should also be a scrollable table view with cells being dynamically added if there is content for them (some are missing image, some fields are missing etc.).
 
