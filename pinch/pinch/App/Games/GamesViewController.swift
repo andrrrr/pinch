@@ -83,7 +83,7 @@ extension GamesViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row + 1 == viewModel.rows.count {
-            viewModel.getGames()
+            viewModel.getGamesLocked()
         }
     }
 }

@@ -34,6 +34,10 @@ class DetailViewModel: DetailViewModelType {
 }
 
 extension DetailViewModel: EasyRequestDelegate {
+    func onNoConnection() {
+        coordinatorDelegate?.showErrorPopup()
+    }
+
     func onError() {
         coordinatorDelegate?.showErrorPopup()
     }

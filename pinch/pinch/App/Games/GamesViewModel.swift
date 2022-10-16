@@ -19,6 +19,7 @@ class GamesViewModel: GamesViewModelType {
     var games: [Game]?
     var offset: Int
     let limit = 20
+    var lock = false
 
     required init() {
         offset = 0
@@ -26,14 +27,19 @@ class GamesViewModel: GamesViewModelType {
 
         resolveServices()
         getGames()
-
-//        retrieveGamesFromMemory()
     }
 
     fileprivate func resolveServices() {
         let resolver = DependencyResolver.shared
         endPointService = try? resolver.resolve(EndPointServiceType.self)
         fileService = try? resolver.resolve(FileServiceType.self)
+    }
+
+    func getGamesLocked() {
+        if !lock {
+            lock = true
+            fetchGames(addOffset: true)
+        }
     }
 
     func getGames() {
@@ -50,7 +56,6 @@ class GamesViewModel: GamesViewModelType {
         let body = "fields: \(fields); limit \(limit); offset: \(offset);"
         endPointService?.getGames(body: body,
                                   errorDelegate: self,
-                                  onNoConnection: retrieveGamesFromMemory,
                                   response: { games in
 
             guard let games = games else {
@@ -67,6 +72,7 @@ class GamesViewModel: GamesViewModelType {
             self.rows = self.getCells()
             self.viewDelegate?.refreshTable()
             self.storeGames()
+            self.lock = false
         })
     }
 
@@ -97,10 +103,36 @@ class GamesViewModel: GamesViewModelType {
         }
         return rows
     }
+
+    func delayedClosure(_ closureDelayed: (() -> Void)? ) {
+        let delayInSeconds = 1.0
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
+            closureDelayed?()
+        }
+    }
 }
 
 extension GamesViewModel: EasyRequestDelegate {
     func onError() {
         coordinatorDelegate?.showErrorPopup()
+    }
+
+    func onNoConnection() {
+        guard let gamesData = retrieveGamesFromMemory() else {return}
+        let decoder = JSONDecoder()
+        do {
+            let games =  try decoder.decode([Game].self, from: gamesData)
+            DispatchQueue.main.async {
+                self.games = games
+                self.rows = self.getCells()
+                self.viewDelegate?.refreshTable()
+                self.delayedClosure({
+                    self.lock = false
+                })
+            }
+        } catch {
+            print(error)
+            coordinatorDelegate?.showErrorPopup()
+        }
     }
 }

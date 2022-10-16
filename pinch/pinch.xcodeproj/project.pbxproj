@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2870769C5266BE868E0F51E5 /* Pods_pinchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A697F2E1D82D810318F954BA /* Pods_pinchTests.framework */; };
 		754C56AA28F9436600A9F956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56A928F9436600A9F956 /* AppDelegate.swift */; };
 		754C56AC28F9436600A9F956 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56AB28F9436600A9F956 /* SceneDelegate.swift */; };
 		754C56AE28F9436600A9F956 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C56AD28F9436600A9F956 /* GamesViewController.swift */; };
@@ -41,14 +42,34 @@
 		754C570128FAC9E200A9F956 /* DetailViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C570028FAC9E200A9F956 /* DetailViewModelType.swift */; };
 		754C570328FB1CB400A9F956 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C570228FB1CB400A9F956 /* FileService.swift */; };
 		754C570528FB1CC000A9F956 /* FileServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C570428FB1CC000A9F956 /* FileServiceType.swift */; };
-		EE66ECCDAD20DD7B5DF3AD35 /* Pods_pinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697B909A76462875ACAD959A /* Pods_pinch.framework */; };
+		754C570D28FC31D900A9F956 /* pinchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C570C28FC31D900A9F956 /* pinchTests.swift */; };
+		754C571428FC328C00A9F956 /* NimbleSnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C571328FC328C00A9F956 /* NimbleSnapshotHelper.swift */; };
+		754C571828FC44CF00A9F956 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C571728FC44CF00A9F956 /* GeneratedMocks.swift */; };
+		75B9C88628FC52EC00792369 /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B9C88528FC52EC00792369 /* testData.json */; };
+		75B9C88928FC531D00792369 /* JsonTestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9C88728FC531D00792369 /* JsonTestingHelper.swift */; };
+		75B9C88A28FC531D00792369 /* DependencyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9C88828FC531D00792369 /* DependencyHelper.swift */; };
+		75B9C88B28FC5D7000792369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754C56B528F9436700A9F956 /* Assets.xcassets */; };
+		A9E10B96CCFEACAFAE25A39D /* Pods_pinchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671F878AC67864180ECC7360 /* Pods_pinchApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		754C570E28FC31D900A9F956 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754C569E28F9436600A9F956 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754C56A528F9436600A9F956;
+			remoteInfo = pinch;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		048483835A8E981531B3205D /* Pods-pinchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinchTests.debug.xcconfig"; path = "Target Support Files/Pods-pinchTests/Pods-pinchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		15570E09228FD99BA5BB8573 /* Pods-pinch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinch.debug.xcconfig"; path = "Target Support Files/Pods-pinch/Pods-pinch.debug.xcconfig"; sourceTree = "<group>"; };
-		697B909A76462875ACAD959A /* Pods_pinch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D40C16D5BBD4AD47E514098 /* Pods-pinchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinchTests.release.xcconfig"; path = "Target Support Files/Pods-pinchTests/Pods-pinchTests.release.xcconfig"; sourceTree = "<group>"; };
+		51161C9DF4AAD8F7D48D594B /* Pods-pinchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinchApp.debug.xcconfig"; path = "Target Support Files/Pods-pinchApp/Pods-pinchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		671F878AC67864180ECC7360 /* Pods_pinchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7205E68CDF292476DB1AA87E /* Pods-pinch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinch.release.xcconfig"; path = "Target Support Files/Pods-pinch/Pods-pinch.release.xcconfig"; sourceTree = "<group>"; };
-		754C56A628F9436600A9F956 /* pinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		754C56A628F9436600A9F956 /* pinchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		754C56A928F9436600A9F956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		754C56AB28F9436600A9F956 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		754C56AD28F9436600A9F956 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +105,15 @@
 		754C570028FAC9E200A9F956 /* DetailViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelType.swift; sourceTree = "<group>"; };
 		754C570228FB1CB400A9F956 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		754C570428FB1CC000A9F956 /* FileServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceType.swift; sourceTree = "<group>"; };
+		754C570A28FC31D900A9F956 /* pinchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pinchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		754C570C28FC31D900A9F956 /* pinchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinchTests.swift; sourceTree = "<group>"; };
+		754C571328FC328C00A9F956 /* NimbleSnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleSnapshotHelper.swift; sourceTree = "<group>"; };
+		754C571728FC44CF00A9F956 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		75B9C88528FC52EC00792369 /* testData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
+		75B9C88728FC531D00792369 /* JsonTestingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonTestingHelper.swift; sourceTree = "<group>"; };
+		75B9C88828FC531D00792369 /* DependencyHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyHelper.swift; sourceTree = "<group>"; };
+		A697F2E1D82D810318F954BA /* Pods_pinchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A6F81C50517DF4ACE825BC /* Pods-pinchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinchApp.release.xcconfig"; path = "Target Support Files/Pods-pinchApp/Pods-pinchApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +121,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE66ECCDAD20DD7B5DF3AD35 /* Pods_pinch.framework in Frameworks */,
+				A9E10B96CCFEACAFAE25A39D /* Pods_pinchApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754C570728FC31D900A9F956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2870769C5266BE868E0F51E5 /* Pods_pinchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				754C56A828F9436600A9F956 /* pinch */,
+				754C570B28FC31D900A9F956 /* pinchTests */,
 				754C56A728F9436600A9F956 /* Products */,
 				7CE36013A19C1B9B9F5567FF /* Pods */,
 				B34DC5A507CE76269493E9A0 /* Frameworks */,
@@ -111,7 +150,8 @@
 		754C56A728F9436600A9F956 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				754C56A628F9436600A9F956 /* pinch.app */,
+				754C56A628F9436600A9F956 /* pinchApp.app */,
+				754C570A28FC31D900A9F956 /* pinchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,11 +270,36 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		754C570B28FC31D900A9F956 /* pinchTests */ = {
+			isa = PBXGroup;
+			children = (
+				75B9C88528FC52EC00792369 /* testData.json */,
+				754C571628FC413900A9F956 /* generated */,
+				754C570C28FC31D900A9F956 /* pinchTests.swift */,
+				754C571328FC328C00A9F956 /* NimbleSnapshotHelper.swift */,
+				75B9C88828FC531D00792369 /* DependencyHelper.swift */,
+				75B9C88728FC531D00792369 /* JsonTestingHelper.swift */,
+			);
+			path = pinchTests;
+			sourceTree = "<group>";
+		};
+		754C571628FC413900A9F956 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				754C571728FC44CF00A9F956 /* GeneratedMocks.swift */,
+			);
+			path = generated;
+			sourceTree = "<group>";
+		};
 		7CE36013A19C1B9B9F5567FF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				15570E09228FD99BA5BB8573 /* Pods-pinch.debug.xcconfig */,
 				7205E68CDF292476DB1AA87E /* Pods-pinch.release.xcconfig */,
+				048483835A8E981531B3205D /* Pods-pinchTests.debug.xcconfig */,
+				1D40C16D5BBD4AD47E514098 /* Pods-pinchTests.release.xcconfig */,
+				51161C9DF4AAD8F7D48D594B /* Pods-pinchApp.debug.xcconfig */,
+				A8A6F81C50517DF4ACE825BC /* Pods-pinchApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -242,7 +307,8 @@
 		B34DC5A507CE76269493E9A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				697B909A76462875ACAD959A /* Pods_pinch.framework */,
+				A697F2E1D82D810318F954BA /* Pods_pinchTests.framework */,
+				671F878AC67864180ECC7360 /* Pods_pinchApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -250,9 +316,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		754C56A528F9436600A9F956 /* pinch */ = {
+		754C56A528F9436600A9F956 /* pinchApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 754C56BD28F9436700A9F956 /* Build configuration list for PBXNativeTarget "pinch" */;
+			buildConfigurationList = 754C56BD28F9436700A9F956 /* Build configuration list for PBXNativeTarget "pinchApp" */;
 			buildPhases = (
 				427B3CF36541658CED13B80C /* [CP] Check Pods Manifest.lock */,
 				754C56A228F9436600A9F956 /* Sources */,
@@ -264,10 +330,31 @@
 			);
 			dependencies = (
 			);
-			name = pinch;
+			name = pinchApp;
 			productName = pinch;
-			productReference = 754C56A628F9436600A9F956 /* pinch.app */;
+			productReference = 754C56A628F9436600A9F956 /* pinchApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		754C570928FC31D900A9F956 /* pinchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754C571028FC31D900A9F956 /* Build configuration list for PBXNativeTarget "pinchTests" */;
+			buildPhases = (
+				22B5AB5E0121BC640FC1B8CF /* [CP] Check Pods Manifest.lock */,
+				754C570628FC31D900A9F956 /* Sources */,
+				754C570728FC31D900A9F956 /* Frameworks */,
+				754C570828FC31D900A9F956 /* Resources */,
+				274747DCCC75C6AB83BA34F9 /* [CP] Embed Pods Frameworks */,
+				754C571528FC3F7E00A9F956 /* Cuckoo Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754C570F28FC31D900A9F956 /* PBXTargetDependency */,
+			);
+			name = pinchTests;
+			productName = pinchTests;
+			productReference = 754C570A28FC31D900A9F956 /* pinchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -281,6 +368,10 @@
 				TargetAttributes = {
 					754C56A528F9436600A9F956 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					754C570928FC31D900A9F956 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 754C56A528F9436600A9F956;
 					};
 				};
 			};
@@ -297,7 +388,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				754C56A528F9436600A9F956 /* pinch */,
+				754C56A528F9436600A9F956 /* pinchApp */,
+				754C570928FC31D900A9F956 /* pinchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,9 +406,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		754C570828FC31D900A9F956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B9C88B28FC5D7000792369 /* Assets.xcassets in Resources */,
+				75B9C88628FC52EC00792369 /* testData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		22B5AB5E0121BC640FC1B8CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pinchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		274747DCCC75C6AB83BA34F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pinchTests/Pods-pinchTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pinchTests/Pods-pinchTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pinchTests/Pods-pinchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		427B3CF36541658CED13B80C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,7 +472,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pinch-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-pinchApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -341,6 +481,7 @@
 		};
 		754C56C228F95E0E00A9F956 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -356,6 +497,25 @@
 			shellPath = /bin/sh;
 			shellScript = "
 ";
+		};
+		754C571528FC3F7E00A9F956 /* Cuckoo Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Cuckoo Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OUTPUT_FILE=\"${PROJECT_DIR}/pinchTests/generated/GeneratedMocks.swift\"\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\n\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n\"${PODS_ROOT}/Cuckoo/run\" generate --no-timestamp --no-header --testable \"pinchApp\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Services/EndPointServiceType.swift\" \\\n\"${INPUT_DIR}/Services/ImageServiceType.swift\" \\\n\"${INPUT_DIR}/App/Games/GamesViewModelType.swift\" \\\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -397,7 +557,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		754C570628FC31D900A9F956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754C571428FC328C00A9F956 /* NimbleSnapshotHelper.swift in Sources */,
+				75B9C88A28FC531D00792369 /* DependencyHelper.swift in Sources */,
+				754C571828FC44CF00A9F956 /* GeneratedMocks.swift in Sources */,
+				75B9C88928FC531D00792369 /* JsonTestingHelper.swift in Sources */,
+				754C570D28FC31D900A9F956 /* pinchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		754C570F28FC31D900A9F956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754C56A528F9436600A9F956 /* pinchApp */;
+			targetProxy = 754C570E28FC31D900A9F956 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		754C56AF28F9436600A9F956 /* Games.storyboard */ = {
@@ -469,7 +649,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -523,7 +703,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -535,10 +715,11 @@
 		};
 		754C56BE28F9436700A9F956 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15570E09228FD99BA5BB8573 /* Pods-pinch.debug.xcconfig */;
+			baseConfigurationReference = 51161C9DF4AAD8F7D48D594B /* Pods-pinchApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -548,7 +729,7 @@
 				INFOPLIST_FILE = pinch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Games;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -568,10 +749,11 @@
 		};
 		754C56BF28F9436700A9F956 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7205E68CDF292476DB1AA87E /* Pods-pinch.release.xcconfig */;
+			baseConfigurationReference = A8A6F81C50517DF4ACE825BC /* Pods-pinchApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -581,7 +763,7 @@
 				INFOPLIST_FILE = pinch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Games;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -599,6 +781,44 @@
 			};
 			name = Release;
 		};
+		754C571128FC31D900A9F956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 048483835A8E981531B3205D /* Pods-pinchTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MVMQPVN965;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.pinch.assgnmnt.pinchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pinchApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pinchApp";
+			};
+			name = Debug;
+		};
+		754C571228FC31D900A9F956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D40C16D5BBD4AD47E514098 /* Pods-pinchTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MVMQPVN965;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.pinch.assgnmnt.pinchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pinchApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pinchApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -611,11 +831,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		754C56BD28F9436700A9F956 /* Build configuration list for PBXNativeTarget "pinch" */ = {
+		754C56BD28F9436700A9F956 /* Build configuration list for PBXNativeTarget "pinchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				754C56BE28F9436700A9F956 /* Debug */,
 				754C56BF28F9436700A9F956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754C571028FC31D900A9F956 /* Build configuration list for PBXNativeTarget "pinchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754C571128FC31D900A9F956 /* Debug */,
+				754C571228FC31D900A9F956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

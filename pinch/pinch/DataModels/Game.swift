@@ -1,3 +1,5 @@
+// swiftlint:disable identifier_name
+
 struct Game: Codable {
     let id: Int?
     let category: Int?

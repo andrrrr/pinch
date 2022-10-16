@@ -1,0 +1,596 @@
+[
+    {
+        "id": 40104,
+        "first_release_date": 536457600,
+        "name": "Dogou Souken",
+        "summary": "An overhead-view shoot'em up game.",
+        "url": "https://www.igdb.com/games/dogou-souken"
+    },
+    {
+        "id": 85031,
+        "cover": {
+            "id": 61466,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/yektasaxw6l4ejte7ljb.jpg"
+        },
+        "first_release_date": 1404345600,
+        "name": "City Mysteries",
+        "screenshots": [
+            {
+                "id": 155025,
+                "game": 85031,
+                "height": 480,
+                "image_id": "vqubr5dngvnav82gr2qq",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/vqubr5dngvnav82gr2qq.jpg",
+                "width": 400,
+                "checksum": "50fa92ae-4b8a-5331-2131-4d21c2777388"
+            },
+            {
+                "id": 155026,
+                "game": 85031,
+                "height": 480,
+                "image_id": "hef5xbwivlqhormbijmq",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/hef5xbwivlqhormbijmq.jpg",
+                "width": 400,
+                "checksum": "197e9938-298c-2726-b993-d80332e7b924"
+            },
+            {
+                "id": 155027,
+                "game": 85031,
+                "height": 480,
+                "image_id": "z9cp1rt16dpybiqt5kcn",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/z9cp1rt16dpybiqt5kcn.jpg",
+                "width": 400,
+                "checksum": "b58d5d2b-22d2-b977-0fc9-487eb3740286"
+            }
+        ],
+        "summary": "Search buildings, streets, landmarks as you seek and find hidden objects in New York, Paris, Moscow and London!",
+        "url": "https://www.igdb.com/games/city-mysteries"
+    },
+    {
+        "id": 99234,
+        "cover": {
+            "id": 91582,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1yny.jpg"
+        },
+        "first_release_date": 1527120000,
+        "name": "Sword of the Black Stone",
+        "screenshots": [
+            {
+                "id": 231528,
+                "game": 99234,
+                "height": 720,
+                "image_id": "dipkuxbrfs1xxdv5ochf",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/dipkuxbrfs1xxdv5ochf.jpg",
+                "width": 1280,
+                "checksum": "278b54ef-c4af-e825-675b-bb60ebda7456"
+            },
+            {
+                "id": 231529,
+                "game": 99234,
+                "height": 720,
+                "image_id": "olibiwtgfrkwqbyl976l",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/olibiwtgfrkwqbyl976l.jpg",
+                "width": 1280,
+                "checksum": "dcff758c-e14a-c106-7b9c-37b298d70b13"
+            },
+            {
+                "id": 231530,
+                "game": 99234,
+                "height": 720,
+                "image_id": "xdo28rxgzm3dvdp9f79z",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/xdo28rxgzm3dvdp9f79z.jpg",
+                "width": 1280,
+                "checksum": "47e0d729-27f1-6fcc-5d63-a801b1397d6a"
+            },
+            {
+                "id": 231531,
+                "game": 99234,
+                "height": 720,
+                "image_id": "hfbkjybizdqi6gq0gx5k",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/hfbkjybizdqi6gq0gx5k.jpg",
+                "width": 1280,
+                "checksum": "52284b35-fb58-70f5-2068-cccab767c834"
+            },
+            {
+                "id": 231532,
+                "game": 99234,
+                "height": 720,
+                "image_id": "nyrbkygosi9ow1ovelcw",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/nyrbkygosi9ow1ovelcw.jpg",
+                "width": 1280,
+                "checksum": "4f72ee53-b569-6c74-69f3-e108ae016dc4"
+            }
+        ],
+        "summary": "If your looking for action and adventure then Sword of the Black Stone is for you.",
+        "url": "https://www.igdb.com/games/sword-of-the-black-stone"
+    },
+    {
+        "id": 50524,
+        "first_release_date": 1499904000,
+        "name": "OtterBash",
+        "screenshots": [
+            {
+                "id": 110966,
+                "game": 50524,
+                "height": 1080,
+                "image_id": "e8o9xedtryikye0etoxs",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/e8o9xedtryikye0etoxs.jpg",
+                "width": 1920,
+                "checksum": "9db8a1e3-1122-8237-db86-a412c17e41f5"
+            },
+            {
+                "id": 110967,
+                "game": 50524,
+                "height": 768,
+                "image_id": "bzaizrfmjfbvvtz0nhrb",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/bzaizrfmjfbvvtz0nhrb.jpg",
+                "width": 1360,
+                "checksum": "8d55d51c-6f71-d484-e61b-d1b57ed598b8"
+            },
+            {
+                "id": 110968,
+                "game": 50524,
+                "height": 768,
+                "image_id": "dphplzk8y8b6fsxk132a",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/dphplzk8y8b6fsxk132a.jpg",
+                "width": 1360,
+                "checksum": "4d8ae601-9370-832f-89b0-5ff3497f2765"
+            },
+            {
+                "id": 110969,
+                "game": 50524,
+                "height": 768,
+                "image_id": "y5lqstlknwtmlmqhjn3e",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/y5lqstlknwtmlmqhjn3e.jpg",
+                "width": 1360,
+                "checksum": "6e485fc8-6888-2ec7-cfc0-976421270512"
+            },
+            {
+                "id": 110970,
+                "game": 50524,
+                "height": 768,
+                "image_id": "zkjbxucupk7p4jvm970s",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/zkjbxucupk7p4jvm970s.jpg",
+                "width": 1360,
+                "checksum": "4ed57162-06b7-eaaa-7ffe-587080d0b268"
+            }
+        ],
+        "summary": "Otter Bash!!! The Otters have escaped their habitat and are now wreaking havoc for world dominance. Battle your friends with the cute and adorable little critters. Destroy your opponents with unique weapons; dousing each other with Tar Balloons, smack them with the nifty Taco Boomerang, shove them into your \"Portable Oven\" and see them roast!!!",
+        "url": "https://www.igdb.com/games/otterbash"
+    },
+    {
+        "id": 139538,
+        "cover": {
+            "id": 117024,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2iao.jpg"
+        },
+        "first_release_date": 1525910400,
+        "name": "sun machine",
+        "screenshots": [
+            {
+                "id": 403247,
+                "alpha_channel": true,
+                "animated": false,
+                "game": 139538,
+                "height": 1024,
+                "image_id": "sc8n5b",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc8n5b.jpg",
+                "width": 1024,
+                "checksum": "f044366a-e63e-b7b9-60f7-abad2cab4bb6"
+            },
+            {
+                "id": 403248,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 139538,
+                "height": 1024,
+                "image_id": "sc8n5c",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc8n5c.jpg",
+                "width": 1024,
+                "checksum": "6cc45167-e2ed-6d82-4e8a-8279f6e022e6"
+            }
+        ],
+        "summary": "a story of dark days, chronic fatigue, optimism, and nostalgia",
+        "url": "https://www.igdb.com/games/sun-machine"
+    },
+    {
+        "id": 85450,
+        "name": "Transformers Prime: The Game",
+        "url": "https://www.igdb.com/games/transformers-prime-the-game"
+    },
+    {
+        "id": 33284,
+        "first_release_date": 1457740800,
+        "name": "One way to exit",
+        "screenshots": [
+            {
+                "id": 58492,
+                "game": 33284,
+                "height": 720,
+                "image_id": "swa3xn3bexghpc3ffmcz",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/swa3xn3bexghpc3ffmcz.jpg",
+                "width": 1280,
+                "checksum": "2e9a5eab-1a88-46f3-96ed-31b9d762bea7"
+            },
+            {
+                "id": 58493,
+                "game": 33284,
+                "height": 720,
+                "image_id": "zdlnuq0zls2mtfk06pjf",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/zdlnuq0zls2mtfk06pjf.jpg",
+                "width": 1280,
+                "checksum": "086ad665-897d-c130-6eed-b398e7b2c233"
+            },
+            {
+                "id": 58494,
+                "game": 33284,
+                "height": 720,
+                "image_id": "gpkeqan21zroszd2nvsl",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/gpkeqan21zroszd2nvsl.jpg",
+                "width": 1280,
+                "checksum": "7994f8f8-e3c4-b128-947f-c7d1862a1473"
+            },
+            {
+                "id": 58495,
+                "game": 33284,
+                "height": 720,
+                "image_id": "behvwwk3nlhfvlhcfcm3",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/behvwwk3nlhfvlhcfcm3.jpg",
+                "width": 1280,
+                "checksum": "36335600-c166-654f-0387-91e8392132fd"
+            },
+            {
+                "id": 58496,
+                "game": 33284,
+                "height": 720,
+                "image_id": "ffow63l4ywfkyd0gmsez",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/ffow63l4ywfkyd0gmsez.jpg",
+                "width": 1280,
+                "checksum": "44533f1a-44a7-3484-e2cf-ec3193561600"
+            }
+        ],
+        "summary": "Move forward or backward in search of an exit, but remember, if you started moving you can not stop, and in any case, do not touch the walls, otherwise you have to start all over again.",
+        "url": "https://www.igdb.com/games/one-way-to-exit"
+    },
+    {
+        "id": 89616,
+        "cover": {
+            "id": 192106,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co448a.jpg"
+        },
+        "name": "Bubble Whirl Shooter",
+        "summary": "Shoot bubbles and match colors to pop your way up to victory in this bubble shooting adventure, win magic keys to unlock more secret colorful bubble world, it’s time to enjoy the endless bubble shooting fun!",
+        "url": "https://www.igdb.com/games/bubble-whirl-shooter"
+    },
+    {
+        "id": 104748,
+        "name": "Space station - build your own ISS",
+        "url": "https://www.igdb.com/games/space-station-build-your-own-iss"
+    },
+    {
+        "id": 146815,
+        "cover": {
+            "id": 139338,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2zii.jpg"
+        },
+        "first_release_date": 1230681600,
+        "name": "Parking Lot Maze",
+        "screenshots": [
+            {
+                "id": 441859,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 146815,
+                "height": 480,
+                "image_id": "sc9gxv",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc9gxv.jpg",
+                "width": 640,
+                "checksum": "2cd1edbf-b649-88f0-c7e5-94c6b2d304b6"
+            },
+            {
+                "id": 441860,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 146815,
+                "height": 480,
+                "image_id": "sc9gxw",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc9gxw.jpg",
+                "width": 640,
+                "checksum": "f49c2f01-ffde-dac3-ced4-bcbcf174d8ed"
+            },
+            {
+                "id": 441861,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 146815,
+                "height": 480,
+                "image_id": "sc9gxx",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc9gxx.jpg",
+                "width": 640,
+                "checksum": "53118082-fc1c-609d-63d0-1d6dc0345dd0"
+            }
+        ],
+        "summary": "Parking Lot Maze is a puzzle game where as a parking lot manager, you need to free cars from gridlock before the stress level hits the roof.",
+        "url": "https://www.igdb.com/games/parking-lot-maze"
+    },
+    {
+        "id": 135938,
+        "cover": {
+            "id": 111232,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2dts.jpg"
+        },
+        "first_release_date": 1586390400,
+        "name": "a sunny day in lockdown",
+        "screenshots": [
+            {
+                "id": 683769,
+                "alpha_channel": true,
+                "animated": false,
+                "game": 135938,
+                "height": 512,
+                "image_id": "scenll",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scenll.jpg",
+                "width": 512,
+                "checksum": "374d4a83-ec74-8d86-a016-2e89be970544"
+            }
+        ],
+        "summary": "a sketch of a spring day in self-isolation",
+        "url": "https://www.igdb.com/games/a-sunny-day-in-lockdown"
+    },
+    {
+        "id": 91579,
+        "name": "Racing Live",
+        "url": "https://www.igdb.com/games/racing-live"
+    },
+    {
+        "id": 126622,
+        "cover": {
+            "id": 193622,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co45ee.jpg"
+        },
+        "name": "Long Count",
+        "screenshots": [
+            {
+                "id": 359712,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 126622,
+                "height": 1080,
+                "image_id": "sc7pk0",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7pk0.jpg",
+                "width": 1920,
+                "checksum": "0c96749f-7304-d87d-a7f6-61d7a7ab60fb"
+            },
+            {
+                "id": 359713,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 126622,
+                "height": 1080,
+                "image_id": "sc7pk1",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7pk1.jpg",
+                "width": 1920,
+                "checksum": "5e286324-21b2-4920-610d-37da7ae5d9c3"
+            },
+            {
+                "id": 359714,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 126622,
+                "height": 1080,
+                "image_id": "sc7pk2",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7pk2.jpg",
+                "width": 1920,
+                "checksum": "2a4db824-47cb-e259-afc2-dead9689aac5"
+            },
+            {
+                "id": 359715,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 126622,
+                "height": 1080,
+                "image_id": "sc7pk3",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7pk3.jpg",
+                "width": 1920,
+                "checksum": "c385183f-d384-c60d-e2bb-effedfecf2bd"
+            },
+            {
+                "id": 359716,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 126622,
+                "height": 1080,
+                "image_id": "sc7pk4",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7pk4.jpg",
+                "width": 1920,
+                "checksum": "679a45c4-d18d-3541-7fa2-4e1b0c1a3e28"
+            }
+        ],
+        "summary": "Sierra-style Point & Click Adventure",
+        "url": "https://www.igdb.com/games/long-count"
+    },
+    {
+        "id": 118536,
+        "first_release_date": 1528329600,
+        "name": "Football Nation VR Tournament 2018",
+        "url": "https://www.igdb.com/games/football-nation-vr-tournament-2018"
+    },
+    {
+        "id": 58674,
+        "cover": {
+            "id": 83799,
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1snr.jpg"
+        },
+        "first_release_date": 1459987200,
+        "name": "PKTBALL",
+        "screenshots": [
+            {
+                "id": 713937,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 1334,
+                "image_id": "scfavl",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfavl.jpg",
+                "width": 750,
+                "checksum": "f26a0661-d110-03f3-d980-c86d0e13420a"
+            },
+            {
+                "id": 713941,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 1334,
+                "image_id": "scfavp",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfavp.jpg",
+                "width": 750,
+                "checksum": "383450bb-1471-aecd-98f3-110d1538b0f8"
+            },
+            {
+                "id": 713946,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 1334,
+                "image_id": "scfavu",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfavu.jpg",
+                "width": 750,
+                "checksum": "e1964891-402c-03ac-ee73-4ea64d2ba21e"
+            },
+            {
+                "id": 713952,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 1334,
+                "image_id": "scfaw0",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfaw0.jpg",
+                "width": 750,
+                "checksum": "7a11eb83-66b8-caba-336e-b2ad4d70657d"
+            },
+            {
+                "id": 713958,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 1334,
+                "image_id": "scfaw6",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfaw6.jpg",
+                "width": 750,
+                "checksum": "e9636d48-322c-cfaf-d008-2de692728eb4"
+            },
+            {
+                "id": 713963,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 2732,
+                "image_id": "scfawb",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfawb.jpg",
+                "width": 2048,
+                "checksum": "0d184097-4adb-bd06-f995-b7416554c50b"
+            },
+            {
+                "id": 713971,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 2732,
+                "image_id": "scfawj",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfawj.jpg",
+                "width": 2048,
+                "checksum": "d17f63cb-dd31-5dc9-31b7-bd638ae3d514"
+            },
+            {
+                "id": 713976,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 2732,
+                "image_id": "scfawo",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfawo.jpg",
+                "width": 2048,
+                "checksum": "c539a923-3838-4963-70f3-e869846b7da2"
+            },
+            {
+                "id": 713980,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 2732,
+                "image_id": "scfaws",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfaws.jpg",
+                "width": 2048,
+                "checksum": "ac6afb94-fd11-f7cb-8f30-e6d35990a68b"
+            },
+            {
+                "id": 713983,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 2732,
+                "image_id": "scfawv",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfawv.jpg",
+                "width": 2048,
+                "checksum": "6791e7ea-15a5-c341-92b9-1b38de9496bf"
+            },
+            {
+                "id": 713985,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 2048,
+                "image_id": "scfawx",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfawx.jpg",
+                "width": 1536,
+                "checksum": "9f033428-7a25-6e1a-3ece-e9ea9afb799a"
+            },
+            {
+                "id": 713988,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 2048,
+                "image_id": "scfax0",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfax0.jpg",
+                "width": 1536,
+                "checksum": "27ae6850-20b4-e118-54f0-555be2f51c73"
+            },
+            {
+                "id": 713989,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 2048,
+                "image_id": "scfax1",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfax1.jpg",
+                "width": 1536,
+                "checksum": "e310c61d-4934-119a-f634-98f9bfd01a93"
+            },
+            {
+                "id": 713990,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 2048,
+                "image_id": "scfax2",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfax2.jpg",
+                "width": 1536,
+                "checksum": "45075635-2320-1f3f-00c0-408604da8c44"
+            },
+            {
+                "id": 713991,
+                "alpha_channel": false,
+                "animated": false,
+                "game": 58674,
+                "height": 2048,
+                "image_id": "scfax3",
+                "url": "//images.igdb.com/igdb/image/upload/t_thumb/scfax3.jpg",
+                "width": 1536,
+                "checksum": "ea407797-4791-585f-219a-f42160178472"
+            }
+        ],
+        "summary": "A hyper-charged arcade smash sport designed to test your skills and reflexes to the max. Fight your way through the leaderboard and become a PKTBALL master!",
+        "url": "https://www.igdb.com/games/pktball"
+    }
+]

@@ -9,6 +9,7 @@ import Foundation
 
 protocol EasyRequestDelegate: AnyObject {
     func onError()
+    func onNoConnection()
 }
 
 enum HttpMethod: String {
@@ -30,7 +31,6 @@ public struct EasyRequest<Model: Codable> {
     static func get(delegate: EasyRequestDelegate?,
                     url: String,
                     httpFields: HttpFields? = nil,
-                    onNoConnection: (() -> Data?)?,
                     success successCallback: @escaping SuccessCompletionHandler) {
 
         guard let urlComponent = URLComponents(string: url),
@@ -61,14 +61,8 @@ public struct EasyRequest<Model: Codable> {
                 }
                 if error != nil {
                     if let error = error as? URLError,
-                       error.code.rawValue == -1020,
-                       let gamesData = onNoConnection?() {
-
-                        guard let model = self.parsedModel(with: gamesData) else {
-                            delegate?.onError()
-                            return
-                        }
-                        successCallback(model)
+                       error.code.rawValue == -1020 {
+                        delegate?.onNoConnection()
                     } else {
                         delegate?.onError()
                     }

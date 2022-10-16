@@ -1,7 +1,19 @@
 platform :ios, '16.0'
 
-target 'pinch' do
+target 'pinchApp' do
   use_frameworks!
   pod 'SwiftGen'
   pod 'SwiftLint'
 end
+
+target 'pinchTests' do
+  use_frameworks!
+  inherit! :search_paths
+
+  pod 'Quick', '~> 5.0.1', :inhibit_warnings => true
+  pod 'Nimble', :inhibit_warnings => true
+  pod 'Nimble-Snapshots', :inhibit_warnings => true
+  pod 'Cuckoo'
+  pod 'iOSSnapshotTestCase'
+end
+

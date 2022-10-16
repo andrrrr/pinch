@@ -1,20 +1,50 @@
 PODS:
+  - Cuckoo (1.9.1):
+    - Cuckoo/Swift (= 1.9.1)
+  - Cuckoo/Swift (1.9.1)
+  - iOSSnapshotTestCase (8.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 8.0.0)
+  - iOSSnapshotTestCase/Core (8.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (8.0.0):
+    - iOSSnapshotTestCase/Core
+  - Nimble (10.0.0)
+  - Nimble-Snapshots (9.4.0):
+    - Nimble-Snapshots/Core (= 9.4.0)
+  - Nimble-Snapshots/Core (9.4.0):
+    - iOSSnapshotTestCase (~> 8.0)
+    - Nimble
+  - Quick (5.0.1)
   - SwiftGen (6.6.2)
   - SwiftLint (0.49.1)
 
 DEPENDENCIES:
+  - Cuckoo
+  - iOSSnapshotTestCase
+  - Nimble
+  - Nimble-Snapshots
+  - Quick (~> 5.0.1)
   - SwiftGen
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - Cuckoo
+    - iOSSnapshotTestCase
+    - Nimble
+    - Nimble-Snapshots
+    - Quick
     - SwiftGen
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Cuckoo: 1b6793fe60fac29af50b0a5915bc309a4a1ac673
+  iOSSnapshotTestCase: a670511f9ee3829c2b9c23e6e68f315fd7b6790f
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Nimble-Snapshots: ef281b908c604f78c8313587e25ea92c8ab513d7
+  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
   SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
 
-PODFILE CHECKSUM: b6d2f8797d64e4272db9ce11b04bf0a0205b1558
+PODFILE CHECKSUM: 716a2aa4cb17368865f2ac4852d107b16d6bb4de
 
 COCOAPODS: 1.11.3
