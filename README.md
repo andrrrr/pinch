@@ -1,4 +1,4 @@
-# pinch
+# games database
 
 Project uses pods dependency management, so "pod install --repo-update" is needed from directory where pofile is located. 
 Test target has a cuckoo script in Build Phases - it generates mocks for objects listed in the script on each test target run.
