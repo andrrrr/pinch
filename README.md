@@ -31,7 +31,7 @@ Is a testing framework for short and self-explanatory test notations.
 # Nimble:
 Is a framework allowing screenshot testing. It's a tool for verification of the views whenever any changes are made (combined with mock-data). Initially 
 screenshots are made of the views that are needed to be tested. These reference images are to be found in ReferenceImages inside test folder (it's not not visible from xcode, but it is in the git repo and part of the project). When UI test is run on simulator on remote build machine - it compares newly taken screenshots with reference images - and if difference is detected (up to 1px) - test will fail.
-Important: iPhone 14 Max Pro with iOS16 simulator should be used for screenshots verification. This can be configured on build pipeline.
+Important: iPhone 14 Max Pro with iOS16 simulator should be used for screenshots verification.
 Disclaimer: I found that verifying screenshots doesn't work on different Mac chips. Although same simulator+iOS is selected, different chip/MacOS can cause slight difference in appearance (rounded corners with different radius) - that will fail the test. Easy to workaround - in NimbleSnapshotHelper - set 
 let snapshotAction = .recordSnapshot, run test target once (it will fail, but record new snapshots) - after that change back to .verifySnapshots - it will work after that. 
 
